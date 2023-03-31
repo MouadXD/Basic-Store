@@ -1,0 +1,20 @@
+.pageNotFound {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.pageNotFound .content {
+   text-align: center;
+}
+.pageNotFound .content h3 {
+   font-size: 3rem;
+}
+.pageNotFound .content .backHomeBtn {
+   background-color: transparent;
+   border: 1px solid black;
+   padding: 10px 20px;
+   margin-top: 30px;
+   width: fit-content;
+   color: black;
+}

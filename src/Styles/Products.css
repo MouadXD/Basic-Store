@@ -1,0 +1,128 @@
+.allProducts .container h1 {
+   margin: 40px 0;
+}
+.filtering_items {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+   .filtering_items {
+      flex-direction: column;
+      gap: 15px;
+   }
+   .search {
+      width: 100%;
+   }
+   .search .searchInput {
+      width: 100%;
+   }
+   .filter {
+      display: flex;
+      row-gap: 10px;
+      flex-wrap: wrap;
+   }
+}
+.search input {
+   padding: 3px 10px;
+   border: 1px solid black;
+   width: 270px;
+   height: 35px;
+   border-radius: 5px;
+   outline: none;
+}
+.filter_content {
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 6px;
+   cursor: pointer;
+}
+.filter_content svg {
+   font-size: 20px;
+}
+.products {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   margin-top: 40px;
+}
+@media (max-width: 1000px) {
+   .products {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (max-width: 570px) {
+   .products {
+      grid-template-columns: 1fr;
+   }
+}
+.products .product {
+   border: 1px solid rgba(0,0,0,.125);
+   border-radius: 5px;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.products .product .productImg {
+   margin: 1rem;
+}
+.products .product .productImg img {
+   width: 100%;
+   height: 300px;
+   object-fit: contain;
+}
+.products .product .productInfo {
+   margin-top: 20px;
+   height: fit-content;
+}
+.productInfo .price_moreInfo {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: auto;
+   height: 60px;
+   margin: 0 1rem;
+}
+.productInfo p {
+   margin: 1rem 1rem 0 1rem;
+}
+.moreInfoBtn {
+   background-color: black;
+   color: white;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   border-radius: 2px;
+   position: relative;
+}
+.moreInfoBtn a {
+   color: white;
+}
+.moreInfoBtn svg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.price_moreInfo span {
+   font-weight: bold;
+}
+.spin {
+   font-size: 100px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   animation: spin 2s infinite linear;
+}
+@keyframes spin {
+   100% {
+      transform: rotate(1turn);
+   }
+}
